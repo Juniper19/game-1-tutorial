@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bb7rh4kml0kax"]
+[gd_scene load_steps=7 format=3 uid="uid://bb7rh4kml0kax"]
 
 [ext_resource type="Script" uid="uid://dieksh7jdvctv" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://c8smh6xhlkofp" path="res://mob.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://jmnvk74iypwk" path="res://player.tscn" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bs3l0n1kthnjt" path="res://icon.svg" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cqnjl7v4sly2j" path="res://hud.tscn" id="4_1bvp3"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
@@ -14,6 +15,11 @@ point_count = 5
 [node name="Main" type="Node"]
 script = ExtResource("1_ig7tw")
 mob_scene = ExtResource("2_0xm2m")
+
+[node name="BG" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_lquwl")
 
 [node name="Player" parent="." instance=ExtResource("3_h2yge")]
 
