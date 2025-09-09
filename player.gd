@@ -48,4 +48,3 @@ func start(pos): #starting pos of player
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
-	
