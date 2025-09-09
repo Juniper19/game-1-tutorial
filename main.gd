@@ -3,6 +3,19 @@ extends Node
 @export var mob_scene: PackedScene
 var score
 
+func game_over():
+	$ScoreTimer.stop()
+	$MobTimer.stop()
+	$HUD.show_game_over()
+
+func new_game():
+	score = 0
+	$Player.start($StartPosition.position)
+	$StartTimer.start()
+	
+	$HUD.update_score(score)
+	$HUD.show_message("Get Ready")
+
 func _ready():
 	pass
 
@@ -38,18 +51,3 @@ func _on_mob_timer_timeout():
 
 	# Spawn the mob by adding it to the Main scene.
 	add_child(mob)
-
-func game_over():
-	$ScoreTimer.stop()
-	$MobTimer.stop()
-	$HUD.show_game_over()
-
-func new_game():
-	score = 0
-	$Player.start($StartPosition.position)
-	$StartTimer.start()
-	
-	$HUD.update_score(score)
-	$HUD.show_message("Get Ready")
-	
-	get_tree().call_group("mobs", "queue_free")
