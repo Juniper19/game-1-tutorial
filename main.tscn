@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bb7rh4kml0kax"]
+[gd_scene load_steps=7 format=3 uid="uid://bb7rh4kml0kax"]
 
 [ext_resource type="Script" uid="uid://dieksh7jdvctv" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://c8smh6xhlkofp" path="res://mob.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://jmnvk74iypwk" path="res://player.tscn" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://1bej8a1ycyf6" path="res://MY art/BG2.png" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://cqnjl7v4sly2j" path="res://hud.tscn" id="4_1bvp3"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
@@ -15,10 +16,10 @@ point_count = 5
 script = ExtResource("1_ig7tw")
 mob_scene = ExtResource("2_0xm2m")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 483.0
-offset_bottom = 723.0
-color = Color(0.218268, 0.317485, 0.471158, 1)
+[node name="Bg2" type="Sprite2D" parent="."]
+position = Vector2(239.3, 356.675)
+scale = Vector2(0.994583, 1.00187)
+texture = ExtResource("3_lquwl")
 
 [node name="Player" parent="." instance=ExtResource("3_h2yge")]
 
