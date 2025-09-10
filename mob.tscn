@@ -1,21 +1,42 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8smh6xhlkofp"]
+[gd_scene load_steps=13 format=3 uid="uid://c8smh6xhlkofp"]
 
 [ext_resource type="Script" uid="uid://d2hue0mnua7m" path="res://mob.gd" id="1_1qmh0"]
-[ext_resource type="Texture2D" uid="uid://b55bdpm7bg08c" path="res://art/enemyFlyingAlt_1.png" id="1_b3mxk"]
-[ext_resource type="Texture2D" uid="uid://cet7s3lwhthxb" path="res://art/enemyFlyingAlt_2.png" id="2_1qmh0"]
-[ext_resource type="Texture2D" uid="uid://bmo128tny68vb" path="res://art/enemySwimming_1.png" id="3_gfurk"]
-[ext_resource type="Texture2D" uid="uid://cksweijgfa77a" path="res://art/enemySwimming_2.png" id="4_ieysi"]
-[ext_resource type="Texture2D" uid="uid://pobvvjv754vy" path="res://art/enemyWalking_1.png" id="5_cixyi"]
-[ext_resource type="Texture2D" uid="uid://df1oekg33fnmy" path="res://art/enemyWalking_2.png" id="6_7ulmv"]
+[ext_resource type="Texture2D" uid="uid://cf3oqtihxmj8l" path="res://MY art/Green Guys Sheet.png" id="2_p11y5"]
+[ext_resource type="Texture2D" uid="uid://s4u7n34tltpk" path="res://MY art/Blue Guys Sheet.png" id="4_b3mxk"]
+[ext_resource type="Texture2D" uid="uid://cmjs7kh8erm6t" path="res://MY art/Red Guys Sheet.png" id="4_s5nov"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3mxk"]
+atlas = ExtResource("2_p11y5")
+region = Rect2(0, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ieysi"]
+atlas = ExtResource("2_p11y5")
+region = Rect2(80, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qmh0"]
+atlas = ExtResource("4_b3mxk")
+region = Rect2(0, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfurk"]
+atlas = ExtResource("4_b3mxk")
+region = Rect2(80, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cixyi"]
+atlas = ExtResource("4_s5nov")
+region = Rect2(0, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ulmv"]
+atlas = ExtResource("4_s5nov")
+region = Rect2(80, 0, 80, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pcqmr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_b3mxk")
+"texture": SubResource("AtlasTexture_b3mxk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_1qmh0")
+"texture": SubResource("AtlasTexture_ieysi")
 }],
 "loop": true,
 "name": &"fly",
@@ -23,10 +44,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_gfurk")
+"texture": SubResource("AtlasTexture_1qmh0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ieysi")
+"texture": SubResource("AtlasTexture_gfurk")
 }],
 "loop": true,
 "name": &"swim",
@@ -34,10 +55,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_cixyi")
+"texture": SubResource("AtlasTexture_cixyi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_7ulmv")
+"texture": SubResource("AtlasTexture_7ulmv")
 }],
 "loop": true,
 "name": &"walk",
@@ -45,8 +66,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jbnni"]
-radius = 42.0
-height = 102.0
+radius = 29.0
+height = 58.0
 
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
 gravity_scale = 0.0
