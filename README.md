@@ -3,7 +3,7 @@ Godot project git repo, tutorial for class.
 
 I followed the creep tutorial, which can be found here: https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html
 
-Assets in my final product can be found here: 
+Assets are all my art (banger).
 
 9/8 - 10:30-11:45 Started project
 
