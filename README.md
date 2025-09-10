@@ -14,3 +14,8 @@ Assets are all my art (banger).
 9/9 - 8-9pm Made changes to tutorial project. My own art, backgrounds, changed physics, etc.
 
 TOTAL TIME: 6.25 hrs
+
+CHANGE 1 - Font changed
+CHANGE 2 - Enemies now collide with each other
+CHANGE 3 - Going off one end of the screen puts you on the opposite side
+CHANGE 4 - Backgrounds/art is now my own assetry
