@@ -5,12 +5,12 @@ I followed the creep tutorial, which can be found here: https://docs.godotengine
 
 Assets are all my art (banger).
 
-9/8 - 10:30-11:45 Started project
+9/8 - 10:30-11:45am Started project
 
-9/8 - 3:30-5 Read Godot documentation and dynamic language documentation during other class, researched some of the functions found in the tutorial. Found here: https://docs.godotengine.org/en/stable
+9/8 - 3:30-5pm Read Godot documentation and dynamic language documentation during other class, researched some of the functions found in the tutorial. Found here: https://docs.godotengine.org/en/stable
 
-9/8 - 7:30-10 Finished tutorial project, debugged issues
+9/8 - 7:30-10pm Finished tutorial project, debugged issues
 
-9/9 - 8-9 Made changes to tutorial project. My own art, backgrounds, changed physics, etc.
+9/9 - 8-9pm Made changes to tutorial project. My own art, backgrounds, changed physics, etc.
 
 TOTAL TIME: 6.25 hrs
