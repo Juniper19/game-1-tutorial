@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cqnjl7v4sly2j"]
 
 [ext_resource type="Script" uid="uid://o5cqmsnx655u" path="res://HUD.gd" id="1_tg4cr"]
-[ext_resource type="FontFile" uid="uid://c28ls8doccyel" path="res://fonts/Xolonium-Regular.ttf" id="1_v2lfg"]
+[ext_resource type="FontFile" uid="uid://daosna8bbwf2m" path="res://fonts/Naturaly.otf" id="2_64ctp"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_tg4cr")
@@ -11,7 +11,7 @@ anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 78.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("1_v2lfg")
+theme_override_fonts/font = ExtResource("2_64ctp")
 theme_override_font_sizes/font_size = 64
 text = "0"
 horizontal_alignment = 1
@@ -29,7 +29,7 @@ offset_right = 230.0
 offset_bottom = -280.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("1_v2lfg")
+theme_override_fonts/font = ExtResource("2_64ctp")
 theme_override_font_sizes/font_size = 64
 text = "Dodge the little guys"
 horizontal_alignment = 1
@@ -48,7 +48,7 @@ offset_right = 100.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("1_v2lfg")
+theme_override_fonts/font = ExtResource("2_64ctp")
 theme_override_font_sizes/font_size = 64
 text = "Start"
 
